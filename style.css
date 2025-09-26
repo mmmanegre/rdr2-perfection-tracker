@@ -1,0 +1,93 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #7a6a53;
+
+}
+
+h1{
+    color: #3b1a10;
+}
+#categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.category-card{
+    background: #c1c0bc;
+    border: 3px solid #ab9999;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.category-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.2);
+}
+.category-card h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0 0 10px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(107, 81, 68);
+}
+
+.toggle-btn {
+  border: none;
+  background: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.toggle-btn:hover {
+    transform: scale(1.2);
+}
+
+.hidden {
+  display: none;
+}
+#progress-container{
+    margin: 20px 0;
+}
+
+#progress-bar {
+  width: 100%;
+  height: 20px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px 0 15px 0;
+}
+
+#progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #8b0000;
+  transition: width 0.3s;
+}
+/*category progress bars*/
+.progress-bar{
+    width: 80%;
+    height: 15px;
+    background: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 5px 0 15px 0;
+}
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #c50000;
+    transition: width 0.3s;
+}
+
+ul li {
+    margin: 5px;
+}
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
